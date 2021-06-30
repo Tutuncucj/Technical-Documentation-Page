@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Side-bar */
+
+.side-bar {
+    width: 25%;
+    max-width: 100%;
+    background-color: white;
+    position: fixed;
+    overflow-y: scroll;
+    height: 100%;
+    border-right: 6px solid rgb(170, 169, 169);
+}
+
+.container-nav {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    
+}
+
+.side-header {
+    color: rgb(53, 47, 47);
+    padding: 30px 12px 30px 50px;
+    font-size: 3rem;
+    position: fixed;
+    z-index: 1;
+    max-width: 100%;
+    background-color: #FFFFFF;
+    width: 20.3%;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding-top: 2%;
+    position: relative;
+    top:130px;
+    border-top: 1px solid;
+}
+
+.nav-item {
+    border-bottom: 1px solid black;
+    font-size: 2rem;
+    padding: 20px 0px 20px 50px ;
+}
+
+.nav-link {
+    color: #4d4e53;
+    text-decoration: none;
+    transition: all 0.5s linear ;
+}
+.nav-item:hover {
+    background-color: rgb(131, 123, 123);
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid rgb(53, 47, 47);
+    padding-bottom: 5px;
+    font-size: 3rem;
+    transform: translateX(20px);
+}
+
+/* main */
+
+main {
+    margin-left: 25%;
+    padding: 30px 60px;
+    overflow: auto;
+}
+
+.container-main {
+    text-align: justify;
+}
+
+.main-section header {
+    padding: 30px 0px;
+    font-size: 1.7rem;
+}
+
+p {
+    line-height: 2;
+    font-size: 1.3rem;
+    word-spacing: 1;
+    padding: 20px 0px 20px 0px;
+}
+
+.main-section li {
+    padding: 20px 0px 20px 70px;
+    line-height: 1.5;
+    font-size: 1.3rem;
+    list-style-type: disc;
+    list-style-position: inside; 
+    
+}
+
+li::marker {
+    font-size: 20px;
+    color: rgb(65, 60, 60);   
+    
+}
+
+code {
+    text-align: left;
+    background-color:#f7f7f7;
+    margin: 10px 0px 10px 50px;
+    padding: 15px;
+    display: block;
+    font-size: 1.3rem;
+    line-height: 2;
+    word-spacing: 5px;
+    white-space:pre-line;
+    word-wrap: normal;
+    border-radius: 5px;
+    font-family: monospace;
+}
+/* Media */
+ 
+@media screen and (max-width: 1121px) {
+    .side-bar {
+        display: none;
+    }
+    main {
+     
+     margin: 0;
+    }
+      
+}
+
+@media screen and (max-width: 1490px) {
+    .nav-list {
+        top:200px;
+       border-right: 1px solid rgb(170, 169, 169);
+    }
+    .side-bar {
+        border: none;
+    }
+
+}
